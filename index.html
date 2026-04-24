@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayathmi Gamachchige — Commercial Marketing Manager</title>
-    <meta name="description" content="Jayathmi Gamachchige — Commercial Marketing Manager at Hambantota International Port" />
+    <title>Jayathmi D. Gamachchige — Assistant Manager, Commercial & Marketing</title>
+    <meta name="description" content="Jayathmi D. Gamachchige — Assistant Manager, Commercial & Marketing at Hambantota International Port Group" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet" />
@@ -71,11 +71,17 @@
             font-size: clamp(2.5rem, 6vw, 4rem);
             line-height: 1.1;
             color: #fff;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
         }
         .hero h1 span { color: #60a5fa; }
+        .hero-title-line {
+            font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+            color: #93c5fd;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
         .hero-sub {
-            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            font-size: clamp(1rem, 2vw, 1.2rem);
             color: #cbd5e1;
             max-width: 560px;
             margin-bottom: 40px;
@@ -196,6 +202,54 @@
         .exp-org { font-size: .9rem; color: #78716c; margin-bottom: 8px; }
         .exp-desc { font-size: .95rem; color: #57534e; line-height: 1.7; }
 
+        /* ─── education ─── */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 640px) {
+            .edu-grid { grid-template-columns: 1fr; }
+        }
+        .edu-card {
+            background: #fff;
+            border: 1px solid #e7e5e4;
+            border-radius: 16px;
+            padding: 28px 24px;
+        }
+        .edu-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1c1917;
+            margin-bottom: 4px;
+        }
+        .edu-card .edu-school {
+            font-size: .9rem;
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .edu-card .edu-desc {
+            font-size: .9rem;
+            color: #57534e;
+            line-height: 1.6;
+        }
+        .edu-card .edu-year {
+            font-size: .8rem;
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+        .cert-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            font-size: .8rem;
+            font-weight: 500;
+            padding: 4px 12px;
+            border-radius: 100px;
+            margin-top: 10px;
+        }
+
         /* ─── skills ─── */
         .skills-grid {
             display: flex;
@@ -216,6 +270,29 @@
             color: #2563eb;
             box-shadow: 0 2px 8px rgba(59,130,246,.1);
         }
+
+        /* ─── news ─── */
+        .news-card {
+            background: #fff;
+            border: 1px solid #e7e5e4;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+        @media (max-width: 640px) {
+            .news-card { flex-direction: column; gap: 12px; }
+        }
+        .news-date {
+            font-size: .8rem;
+            font-weight: 600;
+            color: #3b82f6;
+            white-space: nowrap;
+            min-width: 90px;
+        }
+        .news-text { font-size: .95rem; color: #57534e; line-height: 1.7; }
+        .news-text strong { color: #1c1917; }
 
         /* ─── contact ─── */
         .contact-section {
@@ -274,6 +351,11 @@
             color: #fff;
         }
         .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,.2);
+            color: #e2e8f0;
+        }
+        .btn-outline:hover { border-color: #60a5fa; color: #93c5fd; }
 
         /* ─── footer ─── */
         footer {
@@ -300,9 +382,10 @@
     <div class="hero-grid"></div>
     <div class="container" style="position:relative;z-index:1;width:100%">
         <div class="hero-content">
-            <div class="hero-badge">Hambantota International Port</div>
-            <h1>Jayathmi<br /><span>Gamachchige</span></h1>
-            <p class="hero-sub">Commercial Marketing Manager driving business growth and strategic partnerships at Sri Lanka's most diversified deep-water port.</p>
+            <div class="hero-badge">Hambantota International Port Group</div>
+            <h1>Jayathmi D.<br /><span>Gamachchige</span></h1>
+            <div class="hero-title-line">Assistant Manager — Commercial &amp; Marketing</div>
+            <p class="hero-sub">Coordinating foreign delegations, embassy visits, and port tours at Sri Lanka's most diversified deep-water port.</p>
             <div class="hero-meta">
                 <div class="hero-meta-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -310,7 +393,11 @@
                 </div>
                 <div class="hero-meta-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    HIP Group
+                    HIPG Commercial &amp; Marketing
+                </div>
+                <div class="hero-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Dalian Maritime University
                 </div>
             </div>
         </div>
@@ -325,29 +412,29 @@
 <section>
     <div class="container">
         <div class="section-label">About</div>
-        <h2 class="section-title">Strategic marketer<br />in global maritime trade</h2>
+        <h2 class="section-title">Connecting global partners<br />to Sri Lanka's gateway port</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Jayathmi Gamachchige is a Commercial Marketing Manager at Hambantota International Port (HIP) — a deep-water, multi-purpose port strategically located 10 nautical miles from the world's busiest east-west shipping route.</p>
-                <p>She brings a results-driven approach to marketing strategy, client relationship management, and business development in the port and maritime sector. Her work spans RO-RO, container cargo, energy services, and marine services, connecting global partners to Sri Lanka's most diversified port.</p>
-                <p>With a deep understanding of the Indian Ocean trade corridor and the port's role as a transshipment hub for over 700,000 vehicles per month, Jayathmi helps drive HIP's commercial vision and market positioning.</p>
+                <p><strong>Jayathmi D. Gamachchige</strong> serves as Assistant Manager — Commercial &amp; Marketing at <strong>Hambantota International Port Group (HIPG)</strong>, a strategic public-private partnership between the Government of Sri Lanka and China Merchants Port Holdings (CMPort).</p>
+                <p>Based at the port's commercial and marketing division, Jayathmi is responsible for coordinating <strong>foreign delegations and embassy visits</strong>, managing <strong>port visit coordination</strong>, and supporting the broader commercial marketing function. She works alongside the DGM-Commercial &amp; Marketing and a team of commercial executives to promote HIPG's diverse service portfolio — including RO-RO, container cargo, breakbulk, energy services, and marine services.</p>
+                <p>Her international education in transportation management and logistics gives her a unique vantage point on global trade corridors, making her an effective bridge between HIPG and its international stakeholders.</p>
             </div>
             <div class="about-stats">
                 <div class="stat-card">
                     <div class="stat-number">10</div>
-                    <div class="stat-label">Nautical miles from global shipping route</div>
+                    <div class="stat-label">Nautical miles from global east-west shipping route</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">700K+</div>
                     <div class="stat-label">Vehicles handled monthly at HIP</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">99</div>
-                    <div class="stat-label">Year lease — global partnership with CMPort</div>
+                    <div class="stat-number">3.5</div>
+                    <div class="stat-label">Kilometres of deep-draft berths at the port</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">1M+</div>
-                    <div class="stat-label">TEUs annual container capacity</div>
+                    <div class="stat-number">99</div>
+                    <div class="stat-label">Year partnership between SLPA &amp; CMPort</div>
                 </div>
             </div>
         </div>
@@ -358,32 +445,49 @@
 <section class="border-b">
     <div class="container">
         <div class="section-label">Experience</div>
-        <h2 class="section-title">Career journey</h2>
+        <h2 class="section-title">Professional journey</h2>
         <div class="exp-list">
             <div class="exp-item">
                 <div class="exp-year">Present</div>
                 <div>
-                    <div class="exp-title">Commercial Marketing Manager</div>
+                    <div class="exp-title">Assistant Manager — Commercial &amp; Marketing</div>
                     <div class="exp-org">Hambantota International Port Group</div>
-                    <div class="exp-desc">Leading commercial marketing strategy for Sri Lanka's most diversified port. Driving business development across RO-RO, container cargo, energy services, and marine service lines. Building strategic partnerships with global shipping lines and logistics providers in the Indian Ocean trade corridor.</div>
+                    <div class="exp-desc">Managing foreign delegations, embassy visits, and port visit coordination. Supporting commercial marketing operations across HIPG's diverse service lines including RO-RO, container cargo, breakbulk, and energy services. Collaborating with the DGM-Commercial &amp; Marketing and cross-functional teams to drive business development and stakeholder engagement.</div>
                 </div>
             </div>
             <div class="exp-item">
-                <div class="exp-year">2022 &ndash; 2024</div>
+                <div class="exp-year">Jul 2024</div>
                 <div>
-                    <div class="exp-title">Marketing Executive</div>
-                    <div class="exp-org">Hambantota International Port Group</div>
-                    <div class="exp-desc">Supported the commercial marketing function with market research, campaign execution, and client engagement initiatives. Contributed to brand positioning and promotional efforts targeting international shipping and logistics stakeholders.</div>
+                    <div class="exp-title">Represented HIPG at Colombo Dockyard Agreement</div>
+                    <div class="exp-org">Colombo Dockyard PLC × HIPG Signing Ceremony</div>
+                    <div class="exp-desc">Part of the HIPG delegation that signed a landmark agreement with Colombo Dockyard to establish a fully-fledged afloat repair workshop at Hambantota International Port. The initiative augments service availability for vessels calling Sri Lankan waters, including VLCCs with up to 17-metre draft.</div>
                 </div>
             </div>
-            <div class="exp-item">
-                <div class="exp-year">2020 &ndash; 2022</div>
-                <div>
-                    <div class="exp-title">Business Development Associate</div>
-                    <div class="exp-org">Maritime &amp; Logistics Sector</div>
-                    <div class="exp-desc">Built foundational expertise in maritime business development, client acquisition, and trade corridor analysis. Developed skills in negotiation, market intelligence, and cross-functional coordination.</div>
-                </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════ EDUCATION ════════════════════ -->
+<section class="border-b">
+    <div class="container">
+        <div class="section-label">Education</div>
+        <h2 class="section-title">Academic background</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div class="edu-school">Dalian Maritime University, China</div>
+                <h4>Master of Business Administration (MBA)</h4>
+                <div class="edu-desc">Advanced business management with a focus on maritime and port industry applications. Dalian Maritime University is one of China's leading maritime institutions.</div>
+                <div class="edu-year">&nbsp;</div>
             </div>
+            <div class="edu-card">
+                <div class="edu-school">Dalian Maritime University, China</div>
+                <h4>BSc in International Transportation Management &amp; Logistics</h4>
+                <div class="edu-desc">Comprehensive foundation in global supply chain management, transportation economics, port operations, and international trade logistics.</div>
+                <div class="edu-year">&nbsp;</div>
+            </div>
+        </div>
+        <div style="margin-top:24px;">
+            <span class="cert-badge">Certified Customs House Agent &amp; Wharf Assistant — Sri Lanka Customs</span>
         </div>
     </div>
 </section>
@@ -394,18 +498,34 @@
         <div class="section-label">Expertise</div>
         <h2 class="section-title">Skills &amp; capabilities</h2>
         <div class="skills-grid">
-            <span class="skill-tag">Commercial Marketing Strategy</span>
+            <span class="skill-tag">Commercial Marketing</span>
             <span class="skill-tag">Port &amp; Maritime Marketing</span>
+            <span class="skill-tag">Foreign Delegation Coordination</span>
+            <span class="skill-tag">Embassy Relations</span>
+            <span class="skill-tag">Port Visit Management</span>
             <span class="skill-tag">Business Development</span>
-            <span class="skill-tag">Client Relationship Management</span>
             <span class="skill-tag">RO-RO &amp; Container Cargo</span>
-            <span class="skill-tag">Market Research &amp; Intelligence</span>
-            <span class="skill-tag">Strategic Partnerships</span>
-            <span class="skill-tag">Campaign Management</span>
-            <span class="skill-tag">Brand Positioning</span>
-            <span class="skill-tag">International Trade Corridors</span>
-            <span class="skill-tag">Energy Services Marketing</span>
+            <span class="skill-tag">Energy Services</span>
+            <span class="skill-tag">Supply Chain &amp; Logistics</span>
+            <span class="skill-tag">International Trade Operations</span>
             <span class="skill-tag">Stakeholder Engagement</span>
+            <span class="skill-tag">Cross-functional Collaboration</span>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════ NEWS MENTION ════════════════════ -->
+<section class="border-b">
+    <div class="container">
+        <div class="section-label">News</div>
+        <h2 class="section-title">In the press</h2>
+        <div class="news-card">
+            <div class="news-date">Jul 2024</div>
+            <div class="news-text">
+                <strong>Colombo Dockyard Signs Agreement for Fully-Fledged Workshop at HIP</strong><br />
+                Jayathmi was part of the HIPG delegation — alongside CEO Johnson Liu, DGM Bindu Ranasinghe, and Executive Henry Liu — at the signing with Colombo Dockyard PLC's MD/CEO Thimira Godakumbura. The workshop will extend afloat repair services to the southernmost tip of Sri Lanka, leveraging HIP's 3.5 km of deep-draft berths.<br />
+                <span style="font-size:.85rem;color:#94a3b8;margin-top:8px;display:inline-block;">Source: Colombo Dockyard PLC / cdl.lk</span>
+            </div>
         </div>
     </div>
 </section>
@@ -421,7 +541,7 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M22 6l-10 7L2 6"/></svg>
                     <div>
                         <div class="contact-item-label">Email</div>
-                        <div class="contact-item-value"><a href="mailto:jayathmi@hipg.lk">jayathmi@hipg.lk</a></div>
+                        <div class="contact-item-value"><a href="mailto:jayathmi.gamachchige@hipg.lk">jayathmi.gamachchige@hipg.lk</a></div>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -434,23 +554,33 @@
                 <div class="contact-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     <div>
-                        <div class="contact-item-label">Website</div>
-                        <div class="contact-item-value"><a href="https://www.hipg.lk" target="_blank">hipg.lk</a></div>
+                        <div class="contact-item-label">Dept Email</div>
+                        <div class="contact-item-value"><a href="mailto:com.mkt@hipg.lk">com.mkt@hipg.lk</a></div>
                     </div>
                 </div>
                 <div class="contact-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     <div>
                         <div class="contact-item-label">Phone</div>
-                        <div class="contact-item-value"><a href="tel:+94711234567">+94 71 123 4567</a></div>
+                        <div class="contact-item-value"><a href="tel:+94764077993">+94 76 407 7993</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <div>
+                        <div class="contact-item-label">Website</div>
+                        <div class="contact-item-value"><a href="https://www.hipg.lk" target="_blank">hipg.lk</a></div>
                     </div>
                 </div>
             </div>
             <div class="contact-cta">
-                <p>Interested in discussing partnerships, port services, or commercial opportunities at Hambantota International Port? Reach out directly.</p>
-                <a href="mailto:jayathmi@hipg.lk" class="btn btn-primary">
+                <p>Interested in coordinating a port visit, arranging a delegation tour, or exploring commercial opportunities at Hambantota International Port? Reach out directly.</p>
+                <a href="mailto:jayathmi.gamachchige@hipg.lk" class="btn btn-primary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     Send an email
+                </a>
+                <a href="https://www.hipg.lk" target="_blank" class="btn btn-outline">
+                    Visit HIPG website
                 </a>
             </div>
         </div>
@@ -460,8 +590,8 @@
 <!-- ════════════════════ FOOTER ════════════════════ -->
 <footer>
     <div class="container">
-        &copy; 2026 Jayathmi Gamachchige &middot; Hambantota International Port Group<br />
-        <span style="font-size:.8rem;color:#475569">Built with care &middot; <a href="https://www.hipg.lk" target="_blank">hipg.lk</a></span>
+        &copy; 2026 Jayathmi D. Gamachchige &middot; Hambantota International Port Group<br />
+        <span style="font-size:.8rem;color:#475569">Data sourced from <a href="https://www.hipg.lk/contact-us/contact-details" target="_blank">hipg.lk</a> and public records</span>
     </div>
 </footer>
 
